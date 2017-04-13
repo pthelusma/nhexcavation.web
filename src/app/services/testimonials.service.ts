@@ -8,7 +8,10 @@ export class TestimonialsService {
   public getTestimonials(): Promise<any> {
     return Promise.resolve([
       {
+        title: '',
         quote: 'This is a testimonial',
+        customer: '',
+        location: ''
       }
     ]);
   }

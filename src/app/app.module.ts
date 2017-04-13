@@ -4,19 +4,37 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
-//ROOT
+// ROOT
 import { AppComponent } from './app.component';
 
-//Routes
-import { GalleryComponent } from './gallery/gallery.component';
-import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
-import { TestimonialsComponent } from './testimonials/testimonials.component';
+// Routes
+import { 
+  GalleryComponent,
+  HomeComponent,
+  AboutComponent,
+  TestimonialsComponent,
+  ServicesComponent,
+  MaterialsComponent,
+  BarkmulchComponent,
+  SoilComponent,
+  CrushedstoneComponent,
+  DecorativestoneComponent,
+  GravelandfillComponent,
+  SepticComponent,
+  HardscapesComponent,
+  ExcavationComponent,
+  LandscapingComponent,
+  PlowingandsandingComponent
+} from './routes';
 
-//COMPONENTS
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ContentComponent } from './content/content.component';
+// COMPONENTS
+import {
+  HeaderComponent,
+  FooterComponent,
+  ContentComponent,
+  CommunicationComponent,
+  TestimonialComponent
+} from './components';
 
 const appRoutes: Routes = [
   { path: 'gallery', component: GalleryComponent },
@@ -35,7 +53,21 @@ const appRoutes: Routes = [
     TestimonialsComponent,
     HeaderComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    CommunicationComponent,
+    TestimonialComponent,
+    ServicesComponent,
+    MaterialsComponent,
+    BarkmulchComponent,
+    SoilComponent,
+    CrushedstoneComponent,
+    DecorativestoneComponent,
+    GravelandfillComponent,
+    SepticComponent,
+    HardscapesComponent,
+    ExcavationComponent,
+    LandscapingComponent,
+    PlowingandsandingComponent
   ],
   imports: [
     BrowserModule,

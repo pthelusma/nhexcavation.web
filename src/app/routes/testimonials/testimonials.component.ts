@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TestimonialsService } from '../testimonials.service';
+import { TestimonialsService } from '../../services';
 
 @Component({
   selector: 'app-testimonials',
