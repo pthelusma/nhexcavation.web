@@ -14,4 +14,5 @@ export { LandscapingComponent } from './landscaping/landscaping.component';
 export { PlowingandsandingComponent } from './plowingandsanding/plowingandsanding.component';
 export { SepticComponent } from './septic/septic.component';
 export { SoilComponent } from './soil/soil.component';
+export { ContactComponent } from './contact/contact.component';
 

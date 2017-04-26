@@ -1,3 +1,53 @@
-<p>
-  communication works!
-</p>
+<div class="row">
+  <form #communicationForm="ngForm">
+    <div class="form-group">
+      <label for="id">Id</label>
+      <input type="text" class="form-control" 
+        id="id" [(ngModel)]="model.Id" name="Id">
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name:</label>
+      <input type="text" class="form-control" 
+        id="firstName" [(ngModel)]="model.FirstName" name="FirstName">
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name:</label>
+      <input type="text" class="form-control" 
+        id="lastName" [(ngModel)]="model.LastName" name="LastName">
+    </div>
+    <div class="form-group">
+      <label for="emailAddress">Email address:</label>
+      <input type="email" class="form-control" 
+        id="emailAddress" [(ngModel)]="model.EmailAddress" name="EmailAddress">
+    </div>
+    <div class="form-group">
+      <label for="PhoneNumber">Phone Number:</label>
+      <input type="tel" class="form-control" 
+        id="PhoneNumber" [(ngModel)]="model.PhoneNumber" name="PhoneNumber">
+    </div>
+    <div class="form-group">
+      <label for="ContactMethod">Preferred Contact Method:</label>
+      <select class="form-control" id="ContactMethod" [(ngModel)]="model.ContactMethod" name="ContactMethod">
+        <option value="-1">Select</option>
+        <option value="Phone">Phone</option>
+        <option value="Email">Email</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="DiscoverMethod">How did you find me?</label>
+        <select class="form-control" id="DiscoverMethod" [(ngModel)]="model.DiscoverMethod" name="DiscoverMethod">
+        <option value="-1">Select</option>
+        <option value="Google">Google</option>
+        <option value="Yahoo!">Yahoo!</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="Message">Message:</label>
+      <textarea class="form-control" rows="5" 
+        id="Message" [(ngModel)]="model.Message" name="Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default" (click)="addCommunication(model)">Submit</button>
+  </form>
+</div>
+
+

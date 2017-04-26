@@ -8,12 +8,10 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
 
   buildNumber = '1.0.0.0';
+  today: number = Date.now();
 
   constructor() { }
 
   ngOnInit() {
   }
-
-
-
 }

@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 
 // Routes
-import { 
+import {
   GalleryComponent,
   HomeComponent,
   AboutComponent,
@@ -24,7 +24,8 @@ import {
   HardscapesComponent,
   ExcavationComponent,
   LandscapingComponent,
-  PlowingandsandingComponent
+  PlowingandsandingComponent,
+  ContactComponent
 } from './routes';
 
 // COMPONENTS
@@ -37,9 +38,12 @@ import {
 } from './components';
 
 const appRoutes: Routes = [
+  { path: 'services', component: ServicesComponent},
   { path: 'gallery', component: GalleryComponent },
-  { path: 'about', component: AboutComponent },
   { path: 'testimonials', component: TestimonialsComponent },
+  { path: 'materials', component: MaterialsComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '', component: HomeComponent
   },
 ];
@@ -67,7 +71,8 @@ const appRoutes: Routes = [
     HardscapesComponent,
     ExcavationComponent,
     LandscapingComponent,
-    PlowingandsandingComponent
+    PlowingandsandingComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
